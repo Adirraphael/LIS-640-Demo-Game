@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#character {
+    font-size: 30px; /* Set size of the emoji */
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 700ms; /* Adjusted animation duration */
+}
+
+@keyframes jump {
+    0% { top: 150px; }
+    30% { top: 80px; } /* Increased jump height */
+    70% { top: 80px; }
+    100% { top: 150px; }
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: orange; /* Changed color for distinction */
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% { left: 480px; }
+    100% { left: -40px; }
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart:hover {
+    background-color: #45a049;
+}
+
